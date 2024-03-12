@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Babcock Landscaping Co</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/3.2.1/css/font-awesome.min.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="bg-lime-700 text-white py-3 px-6 sticky top-0 w-full z-10">
+      <div class="max-w-7xl mx-auto flex justify-between items-center">
+        <div class="flex items-center space-x-4">
+          <a href="#home" class="text-white">
+            <h1 class="text-white font-semibold text-xl">
+              Babcock Landscaping Co.
+            </h1>
+          </a>
+        </div>
+        <nav class="hidden md:block">
+          <ul class="flex space-x-8 font-semibold">
+            <li>
+              <a
+                href="#about"
+                class="text-lg hover:text-lime-100 transition duration-300">
+                About Us
+              </a>
+            </li>
+            <li class="relative">
+              <a
+                href="#services"
+                class="text-lg hover:text-lime-100 transition duration-300">
+                Services
+              </a>
+            </li>
+            <li>
+              <a
+                href="#contact"
+                class="text-lg hover:text-lime-100 transition duration-300">
+                Contact
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.adminmatic.com/bl/portal"
+                class="text-lg hover:text-lime-100 transition duration-300">
+                Customer Portal
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="md:hidden pt-1">
+          <button id="menu-toggle" class="text-white focus:outline-none">
+            <svg class="h-8 w-8 fill-current" viewBox="0 0 24 24">
+              <path d="M3 5h18v2H3V5zm0 6h18v2H3v-2zm0 6h18v2H3v-2z" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div
+        id="mobile-menu"
+        class="md:hidden fixed inset-0 bg-lime-700 text-white py-4 px-6 transform transition duration-200 ease-in-out translate-x-full">
+        <div class="flex justify-end">
+          <button id="menu-close" class="text-white focus:outline-none">
+            <svg class="h-8 w-8 fill-current" viewBox="0 0 24 24">
+              <path
+                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" />
+            </svg>
+          </button>
+        </div>
+        <nav>
+          <ul class="flex flex-col space-y-4 font-semibold">
+            <li>
+              <a
+                href="#about"
+                class="text-lg hover:text-lime-100 transition duration-300">
+                About Us
+              </a>
+            </li>
+            <li>
+              <a
+                href="#services"
+                class="text-lg hover:text-lime-100 transition duration-300">
+                Services
+              </a>
+            </li>
+            <li>
+              <a
+                href="#contact"
+                class="text-lg hover:text-lime-100 transition duration-300">
+                Contact
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.adminmatic.com/bl/portal"
+                class="text-lg hover:text-lime-100 transition duration-300">
+                Customer Portal
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <main>
+      <!-- Home Section -->
+      <section
+        id="home"
+        class="bg-cover bg-center py-16 sm:py-24 md:py-32 lg:py-40 px-6 relative bg-gray-100 bg-cover bg-center bg-no-repeat bg-fixed"
+        style="
+          background-image: url('https://images.unsplash.com/photo-1602537675897-1285bfbcd014?auto=format&fit=crop&w=1920&q=80');
+        ">
+        <div
+          class="max-w-2xl mx-auto relative text-center pt-8 pb-12 bg-white rounded-md opacity-90">
+          <img
+            src="logo.jpg"
+            alt="Babcock Landscaping Co Logo"
+            class="h-32 mx-auto" />
+          <p class="text-xl md:text-2xl mb-8">
+            Transforming outdoor spaces into beautiful landscapes.
+          </p>
+          <a
+            href="#services"
+            class="bg-lime-600 text-white py-3 px-8 rounded-md text-lg font-semibold hover:bg-lime-700 transition duration-300"
+            >Explore Our Services</a
+          >
+        </div>
+      </section>
+      <!-- End Home Section -->
+      <!-- About Section -->
+      <section id="about" class="py-24 px-6">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-4xl font-bold mb-6 text-center">About Us</h2>
+          <p class="mb-6 text-lg">
+            Founded by Christopher Babcock in 2010,
+            <strong>Babcock Landscaping Co</strong> has been serving South
+            County Rhode Island with quality landscaping services. Our mission
+            is built on the principles of honesty, reliability, problem-solving,
+            and creative ideas.
+          </p>
+          <p class="text-lg">
+            We take pride in our attention to detail and use only the highest
+            quality materials and equipment to ensure stunning results. Our goal
+            is to provide our clients with unparalleled service and
+            craftsmanship, creating beautiful and functional outdoor spaces that
+            you can enjoy for years to come.
+          </p>
+        </div>
+      </section>
+      <!-- End About Section -->
+      <!-- Services Section -->
+      <section id="services" class="py-24 px-6 bg-lime-50 cursor-default">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-4xl font-bold mb-8 text-center">Our Services</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+            <div class="bg-white shadow-lg rounded-md overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1557429287-b2e26467fc2b"
+                alt="Maintenance"
+                class="w-full h-48 object-cover" />
+              <div class="p-6">
+                <h3 class="text-2xl font-bold mb-4">
+                  Maintenance - Residential and Commercial
+                </h3>
+                <ul class="list-disc pl-6 text-lg">
+                  <li>Lawn Mowing</li>
+                  <li>Clean Ups</li>
+                  <li>Mulch</li>
+                  <li>Pruning</li>
+                  <li>Fertilizer Programs</li>
+                  <li>Tree and Shrub Plantings</li>
+                </ul>
+              </div>
+            </div>
+            <div class="bg-white shadow-lg rounded-md overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1536882240095-0379873feb4e"
+                alt="Landscape Construction"
+                class="w-full h-48 object-cover" />
+              <div class="p-6">
+                <h3 class="text-2xl font-bold mb-4">
+                  Landscape Construction and Excavation
+                </h3>
+                <ul class="list-disc pl-6 text-lg">
+                  <li>Walkways and Patios</li>
+                  <li>Driveways</li>
+                  <li>Lawn Installation</li>
+                  <li>Hydroseeding</li>
+                  <li>New Construction Excavation and Landscaping</li>
+                  <li>Utilities and Site Work</li>
+                  <li>Erosion and Dust Control</li>
+                  <li>Ornamental and Screening Plantings</li>
+                  <li>Brush cutting and lot clearing</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white shadow-lg rounded-md overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1516715094483-75da7dee9758?auto=format&fit=crop&w=1050&q=80"
+              alt="Commercial Snow Plowing"
+              class="w-full h-48 object-cover" />
+            <div class="p-6">
+              <h3 class="text-2xl font-bold mb-4">Commercial Snow Plowing</h3>
+              <p class="text-lg">Serving Southern Rhode Island</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Services Section -->
+      <!-- Contact Section -->
+      <section id="contact" class="py-24 px-6">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-4xl font-bold mb-8 text-center">Contact Us</h2>
+          <p class="mb-6 text-center text-lg">
+            Ready to transform your outdoor space? Contact us today to schedule
+            a consultation and learn more about how we can bring your
+            landscaping vision to life.
+          </p>
+          <div
+            class="flex flex-col md:flex-row justify-center items-center space-y-6 md:space-y-0 md:space-x-12 mb-6">
+            <a
+              href="https://www.adminmatic.com/bl/contact"
+              target="_self"
+              class="bg-lime-600 text-white py-3 px-8 rounded-md text-lg font-semibold hover:bg-lime-700 transition duration-300"
+              >Contact Us Now!</a
+            >
+          </div>
+          <div
+            class="flex flex-col md:flex-row justify-center items-center space-y-6 md:space-y-0 md:space-x-12 py-4">
+            <div class="text-center">
+              <i class="icon-phone text-4xl text-lime-600 mb-4"></i>
+              <p class="text-xl font-bold">Phone</p>
+              <p class="text-lg">401-595-6045</p>
+            </div>
+            <div class="text-center">
+              <i class="icon-envelope text-4xl text-lime-600 mb-4"></i>
+              <p class="text-xl font-bold">Email</p>
+              <p class="text-lg">babcocklandscapingco@yahoo.com</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Contact Section -->
+    </main>
+    <footer class="bg-gray-800 text-white py-8 px-6">
+      <div class="max-w-4xl mx-auto text-center">
+        <p class="text-lg">
+          &copy; 2024 Babcock Landscaping Co. All rights reserved.
+        </p>
+        <div class="flex justify-center space-x-4 mt-4">
+          <a href="#" class="text-white hover:text-lime-100"
+            ><i class="icon-facebook fa-2x"></i
+          ></a>
+          <a href="#" class="text-white hover:text-lime-100"
+            ><i class="icon-twitter fa-2x"></i
+          ></a>
+          <a href="#" class="text-white hover:text-lime-100"
+            ><i class="icon-instagram fa-2x"></i
+          ></a>
+          <a href="#" class="text-white hover:text-lime-100"
+            ><i class="icon-linkedin fa-2x"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script>
+    const menuToggle = document.getElementById("menu-toggle");
+    const menuClose = document.getElementById("menu-close");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    menuToggle.addEventListener("click", () => {
+      mobileMenu.classList.remove("translate-x-full");
+    });
+
+    menuClose.addEventListener("click", () => {
+      mobileMenu.classList.add("translate-x-full");
+    });
+    /*
+    var details = {
+      key: "aa50df-25a6ad-614ff5-893d41-e8a80f",
+    };
+    var form_body = [];
+    for (var property in details) {
+      var encodedKey = encodeURIComponent(property);
+      var encodedValue = encodeURIComponent(details[property]);
+      form_body.push(encodedKey + "=" + encodedValue);
+    }
+    form_body = form_body.join("&");
+    fetch("https://www.adminmatic.com/api/live", {
+      method: "POST",
+      body: form_body,
+      headers: {
+        "Content-type": "application/x-www-form-urlencoded",
+      },
+    })
+      .then((response) => response.json())
+      .then((json) => console.log(json));
+      */
+  </script>
+</html>
