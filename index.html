@@ -64,7 +64,7 @@
         id="mobile-menu"
         class="md:hidden fixed inset-0 bg-lime-700 text-white py-4 px-6 transform transition duration-200 ease-in-out translate-x-full">
         <div class="flex justify-end">
-          <button id="menu-close" class="text-white focus:outline-none">
+          <button class="text-white focus:outline-none menu-close">
             <svg class="h-8 w-8 fill-current" viewBox="0 0 24 24">
               <path
                 d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" />
@@ -76,21 +76,21 @@
             <li>
               <a
                 href="#about"
-                class="text-lg hover:text-lime-100 transition duration-300">
+                class="text-lg hover:text-lime-100 transition duration-300 menu-close">
                 About Us
               </a>
             </li>
             <li>
               <a
                 href="#services"
-                class="text-lg hover:text-lime-100 transition duration-300">
+                class="text-lg hover:text-lime-100 transition duration-300 menu-close">
                 Services
               </a>
             </li>
             <li>
               <a
                 href="#contact"
-                class="text-lg hover:text-lime-100 transition duration-300">
+                class="text-lg hover:text-lime-100 transition duration-300 menu-close">
                 Contact
               </a>
             </li>
@@ -271,16 +271,21 @@
   </body>
   <script>
     const menuToggle = document.getElementById("menu-toggle");
-    const menuClose = document.getElementById("menu-close");
+    const menuClose = document.getElementsByClassName("menu-close");
     const mobileMenu = document.getElementById("mobile-menu");
+
+    var close_menu = function () {
+      mobileMenu.classList.add("translate-x-full");
+    };
+
+    for (var i = 0; i < menuClose.length; i++) {
+      menuClose[i].addEventListener("click", close_menu, false);
+    }
 
     menuToggle.addEventListener("click", () => {
       mobileMenu.classList.remove("translate-x-full");
     });
 
-    menuClose.addEventListener("click", () => {
-      mobileMenu.classList.add("translate-x-full");
-    });
     /*
     var details = {
       key: "aa50df-25a6ad-614ff5-893d41-e8a80f",
